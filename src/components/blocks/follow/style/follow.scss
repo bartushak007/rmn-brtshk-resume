@@ -1,0 +1,29 @@
+.follow {
+  &__links {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__link-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {    
+    padding: 1rem;
+    background: #1e1f2b;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    transition: 0.5s;
+    
+    &:hover {
+      background: #1e1f2b4f;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.skills {
+  
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__container {
+    width: 50%;  
+    padding: 0.5rem;  
+  }
+
+  &__skill {
+    background: #524f82;    
+  }
+
+  &__percent {
+    background: yellowgreen;
+    text-align: right;
+    color: #fff;
+    padding-right: 0.2rem;
+    font-weight: 400;
+    overflow: hidden;
+  }
+}
