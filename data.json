@@ -1,0 +1,77 @@
+{
+  "pages": {
+    "home": {
+      "education": [
+        {
+          "name": "Lviv Polytechnic National University",
+          "diploma": "Bachelor",
+          "skill": "Software engineering"
+        },
+        {
+          "training": "FrontEnd Development Course",
+          "company": "Mate academy, Kyiv"
+        },
+        {
+          "training": "HTML5/CSS3/JavaScript Fundamentals",
+          "company": "SoftServe IT Academy, Lviv"
+        }
+      ],
+      "follow": [
+        { "name": "facebook", "link": "" },
+        { "name": "linkedin", "link": "" },
+        { "name": "instagram", "link": "" },
+        { "name": "github", "link": "" }
+      ],
+      "likes": [
+        {
+          "path": "images/blocks/hobby/powerlifting.png",
+          "hobby": "powerlifting"
+        },
+        {
+          "path": "images/blocks/hobby/books.png",
+          "hobby": "Reading books"
+        },
+        {
+          "path": "images/blocks/hobby/cup.png",
+          "hobby": "Drincing coffe"
+        },
+        {
+          "path": "images/blocks/hobby/hiking.png",
+          "hobby": "Hiking"
+        },
+        {
+          "path": "images/blocks/hobby/play.png",
+          "hobby": "Playing video games"
+        },
+        {
+          "path": "images/blocks/hobby/rock.png",
+          "hobby": "Rock"
+        }
+      ],
+      "skills": {
+        "title": "My Skills",
+        "data": {
+          "React JS": ["80%", "heavy-rain"],
+          "Html": ["78%", "mountain-rock"],
+          "CSS": ["78%", "plum-plate"],
+          "Async JS": ["50%", "heavy-rain"],
+          "Redux": ["19%", "plum-plate"],
+          "Vanilla JS": ["99%", "plum-plate"],
+          "BEM": ["50%", "mountain-rock"],
+          "GIT": ["19%", "heavy-rain"],
+          "AJAX": ["99%", "strong-bliss"]
+        }
+      },
+      "tools": {
+        "title": "tools",
+        "data": {
+          "photoshop": ["60%"],
+          "illustrator": ["38%"],
+          "Adobe Illustrator": ["38%"],
+          "sublime text": ["78%"],
+          "visual studio code": ["50%"]
+        }
+      }
+    }
+  }
+}
