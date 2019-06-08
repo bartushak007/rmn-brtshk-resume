@@ -6,14 +6,17 @@
   }
 
   &__hobby-box {
-    width: 9rem;
-    height: 9em;
+    width: 7rem;
+    height: 7em;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #524f82;
-    padding: 0.5rem;
-    
-    
+    padding: 0.5rem;  
+
+    @media (min-width: 440px) {
+      width: 9rem;
+      height: 9em;
+    }    
   }
 }
