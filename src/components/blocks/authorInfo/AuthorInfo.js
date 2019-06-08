@@ -8,19 +8,13 @@ import {
   faMobileAlt,
   faEnvelope
 } from "@fortawesome/free-solid-svg-icons";
+import { faSkype } from "@fortawesome/free-brands-svg-icons";
 const contacts = [
   [faMapMarkerAlt, "Ukraine Kyiv/Lviv"],
   [faMobileAlt, "+380970296659"],
-  [faEnvelope, "rmnbrtshk@gmail.com"]
+  [faEnvelope, "rmnbrtshk@gmail.com"],
+  [faSkype, "rmnbrtshk"]
 ];
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import {
-//   faFacebook,
-//   faLinkedin,
-//   faGithub,
-//   faSkype,
-// } from "@fortawesome/free-brands-svg-icons"
-// const icons = { faFacebook, faLinkedin, faGithub, faSkype }
 
 const AuthorInfo = () => {
   const listIcons = ([icon, text]) => (
@@ -47,10 +41,10 @@ const AuthorInfo = () => {
       <div className="retreat text">
         <div>
           <h3 className="title title--small">About me</h3>
-          <p>
+          <p className="info__paragraph">
             Goal-oriented and highly motivated Web Developer looking for new
-            opportunities in FrontEnd. Aim to constant self-improvement. Have good
-            practical skills in creating adaptive and user-friendly layout.
+            opportunities in FrontEnd. Aim to constant self-improvement. Have
+            good practical skills in creating adaptive and user-friendly layout.
             Actively improving JS programming skills at the moment. I don’t have
             any bad habits.
           </p>

@@ -1,29 +1,51 @@
 .skills {
-  
+  grid-area: e;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
   &__inner {
     display: flex;
     flex-wrap: wrap;
-  }  
+    flex-grow: 1;
+    align-content: center;
+  }
 
   &__container {
-    width: 50%;  
-    padding: 0.5rem; 
+    width: 50%;
+    padding: 0.5rem;
 
     &--wild {
-      width: 100%;  
+      width: 100%;
     }
   }
 
   &__skill {
-    background: #524f82;    
+    background: #524f82;
   }
 
   &__percent {
-    background: yellowgreen;
+    background: #ff9933;
     text-align: right;
     color: #fff;
     padding-right: 0.2rem;
     font-weight: 400;
     overflow: hidden;
+
+    &--heavy-rain {
+      background-image: linear-gradient(to right, #cfd9df, #e2ebf0);
+    }
+
+    &--plum-plate {
+      background-image: linear-gradient(to right, #667eea, #764ba2);
+    }
+
+    &--strong-bliss {
+      background-image: linear-gradient(to right, #ff758c, #ff758c);
+    }
+
+    &--mountain-rock {
+      background-image: linear-gradient(to right, #868f96, #596164);
+    }
   }
 }

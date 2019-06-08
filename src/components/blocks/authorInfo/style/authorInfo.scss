@@ -19,15 +19,10 @@
     border: solid 7px #1e1f2b7d;    
   }
 
-  // &__basic,
-  // &__contacts {
-  //   padding: 1.5rem 1.5rem 0 ;
-  // }
-
-  // &__contacts {
-  //   padding-bottom: 1.5rem;
-  // }
-
+  &__paragraph {
+    padding: 0.5rem;
+  }
+  
   &__contacts-elem {
     display: flex;
     align-items: center;

@@ -28,8 +28,8 @@ const Follow = () => {
     const icon = icons["fa" + capitalizeFirst(name)];
 
     return (
-      <div className="follow__link-box">
-        <a className="follow__link" key={name} href={link} rel="noopener noreferrer" target="_blank">
+      <div className="follow__link-box"  key={name}>
+        <a className="follow__link" href={link} rel="noopener noreferrer" target="_blank">
           {Icon(icon, name)}          
         </a>
         <h3 className="title title--smaller">{capitalizeFirst(name)}</h3>

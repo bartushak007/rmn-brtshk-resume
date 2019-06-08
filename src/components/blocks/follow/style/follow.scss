@@ -1,11 +1,12 @@
 .follow {
   &__links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 
   &__link-box {
-    display: flex;
+    display: flex;    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -16,7 +17,7 @@
     background: #1e1f2b;
     width: 5rem;
     height: 5rem;
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;
     font-size: 4rem;

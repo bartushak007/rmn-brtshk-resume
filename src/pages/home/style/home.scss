@@ -2,15 +2,15 @@
   padding: 0 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "a" "b" "c";
+  // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
   grid-gap: 1.3rem;
 
   .info {
     grid-area: a;
   }
 
-  .skills {
+  .mySkills {
     grid-area: b;
   }
 
@@ -30,6 +30,10 @@
     grid-area: f;
   }
 
+  .education {
+    grid-area: g;
+  }
+
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     // grid-template-rows: 1fr 1fr 1fr 1fr auto 1fr;
@@ -39,8 +43,8 @@
       "a a a c c c"
       "d d d d d d"
       "d d d d d d"
+      "e e e g g g"
       "e e e f f f"
-      "e e e f f f"
-      "e e e g g g";
+      ". . . f f f";
   }
 }

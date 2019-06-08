@@ -35,7 +35,7 @@ const Likes = () => {
       <h3 className="title title--small">Likes</h3>
       <div className="likes__container">
       {hobbies.map(({path, hobby}) => (
-        <div className="text-center">
+        <div className="text-center" key={path}>
           <div className="likes__hobby-box">
           <Image src={path}/>
           </div>
