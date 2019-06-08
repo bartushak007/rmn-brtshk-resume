@@ -5,23 +5,7 @@ import "./style/education.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
-const education = [
-  {
-    name: "Lviv Polytechnic National University",
-    diploma: "Bachelor",
-    skill: "Software engineering"
-  },
-  {
-    training: "FrontEnd Development Course",
-    company: 'Mate academy, Kyiv'
-  },
-  {
-    training: "HTML5/CSS3/JavaScript Fundamentals",
-    company: 'SoftServe IT Academy, Lviv'
-  }
-];
-
-const Education = () => {
+const Education = ({education}) => {
   return (
     <div className="brick brick-space education">
       <div className="education__container">

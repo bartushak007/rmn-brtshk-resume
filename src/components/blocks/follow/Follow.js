@@ -11,15 +11,8 @@ import {
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 
-const Follow = () => {
+const Follow = ({follow}) => {
   const icons = { faFacebook, faLinkedin, faGithub, faInstagram };
-  const links = [
-    { name: "facebook", link: "" },
-    { name: "linkedin", link: "" },
-    { name: "instagram", link: "" },
-    { name: "github", link: "" }
-  ];
-
   
   const Icon = (icon, name) =>
     icon ? <FontAwesomeIcon icon={icon} /> : name.charAt(0).toUpperCase();
@@ -41,7 +34,7 @@ const Follow = () => {
     <div className="follow brick brick-space">
       <h3 className="title title--small">Follow me</h3>
       <div className="follow__links">
-        {links.map(renderSocialLink)}
+        {follow.map(renderSocialLink)}
       </div>
     </div>
   );

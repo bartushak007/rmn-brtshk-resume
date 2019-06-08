@@ -1,0 +1,15 @@
+.resume {
+  text-align: right;
+  
+  &__content {
+    padding: 0.5rem;
+    
+    a {
+      transition: 0.3s;
+      &:hover {
+        color: #555;
+      } 
+    }
+    
+  }
+}

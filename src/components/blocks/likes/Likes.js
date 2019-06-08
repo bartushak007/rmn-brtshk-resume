@@ -3,38 +3,13 @@ import React from "react";
 import "./style/likes.scss";
 
 import Image from '../../shared/image';
-const hobbies = [
-  {
-    path: 'images/blocks/hobby/powerlifting.png',
-    hobby: 'powerlifting'
-  },
-  {
-    path: 'images/blocks/hobby/books.png',
-    hobby: 'Reading books'
-  },
-  {
-    path: 'images/blocks/hobby/cup.png',
-    hobby: 'Drincing coffe'
-  },
-  {
-    path: 'images/blocks/hobby/hiking.png',
-    hobby: 'Hiking'
-  },
-  {
-    path: 'images/blocks/hobby/play.png',
-    hobby: 'Playing video games'
-  },
-  {
-    path: 'images/blocks/hobby/rock.png',
-    hobby: 'Rock'
-  }
-]
-const Likes = () => {
+
+const Likes = ({likes}) => {
   return (
     <div className="likes brick retreat">
       <h3 className="title title--small">Likes</h3>
       <div className="likes__container">
-      {hobbies.map(({path, hobby}) => (
+      {likes.map(({path, hobby}) => (
         <div className="text-center" key={path}>
           <div className="likes__hobby-box">
           <Image src={path}/>
