@@ -1,6 +1,38 @@
 {
   "pages": {
     "home": {
+      "portfolio": [
+        {
+          "src": "images/sections/portfolio/photo-gallery.png",
+          "title": "Photo gallery",
+          "steck": ["React", "redux", "bem", "scss"],
+          "link": "https://bartushak007.github.io/photo-gallery/"
+        },
+        {
+          "src": "images/sections/portfolio/bouncy.png",
+          "title": "Bouncy",
+          "steck": ["SCSS", "HTML5", "BEM", "GULP", "SVG"],
+          "link": "https://bartushak007.github.io/bouncy/build"
+        },
+        {
+          "src": "images/sections/portfolio/cellsTaskJs6Vanilla.png",
+          "title": "Easy Game",
+          "steck": ["HTML5", "GULP", "ES-2015", "WEBPACK", "bem", "scss"],
+          "link": "https://bartushak007.github.io/cellsTaskJs6/dist/index.html"
+        },
+        {
+          "src": "images/sections/portfolio/multi-step-form-vanilla-js.png",
+          "title": "Multy step form",
+          "steck": ["css", "ES-2015"],
+          "link": "https://bartushak007.github.io/multi-step-form-vanilla-js/"
+        },
+        {
+          "src": "images/sections/portfolio/bicycle-github.png",
+          "title": "Bicycle",
+          "steck": ["React", "redux", "scss"],
+          "link": "https://bartushak007.github.io/bicycle.github.io/build"
+        }
+      ],
       "education": [
         {
           "name": "Lviv Polytechnic National University",

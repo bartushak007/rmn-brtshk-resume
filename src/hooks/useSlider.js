@@ -3,8 +3,13 @@ import { useState, useEffect } from "react";
 const useSlider = (length, delay = 5000, doSlide = true, startSlide = 0) => {
   const [currentSlide, setCurrentSlide] = useState(startSlide);
   const [goRight, setGoRight] = useState(true);
+  const [beforeStart, setBeforeStart] = useState(true);
 
   useEffect(() => {
+    if (beforeStart) {
+      setCurrentSlide(currentSlide + 1);
+      setBeforeStart(false);
+    }
     if (doSlide) {
       const interval = setInterval(() => {
         if (goRight) {
@@ -24,7 +29,7 @@ const useSlider = (length, delay = 5000, doSlide = true, startSlide = 0) => {
 
       return () => clearInterval(interval);
     }
-  }, [currentSlide, length, delay, doSlide, goRight]);
+  }, [currentSlide, beforeStart, length, delay, doSlide, goRight]);
 
   const nextSlide = () =>
     currentSlide < length - 1 && setCurrentSlide(currentSlide + 1);

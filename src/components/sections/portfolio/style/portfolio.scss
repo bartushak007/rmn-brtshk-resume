@@ -11,7 +11,7 @@
   }
 
   &__skill {
-    margin: 0 0.1rem;
+    margin: 0.1rem;
     padding: 0.11rem;
     background: #4a4e84;
     color: black;
@@ -23,6 +23,7 @@
   &__link {
     text-decoration: underline;
     transition: 0.4s;
+    display: inline;
 
     &:hover {
       color: #555;

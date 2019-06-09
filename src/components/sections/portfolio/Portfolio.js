@@ -5,39 +5,6 @@ import useSlider from "../../../hooks/useSlider";
 
 import "./style/portfolio.scss";
 
-const slides = [
-  {
-    src: "images/sections/portfolio/photo-gallery.png",
-    title: "Photo gallery",
-    steck: ["React", "redux", "scss"],
-    link: ""
-  },
-  {
-    src: "images/sections/portfolio/bouncy.png",
-    title: "Bouncy",
-    steck: ["React", "redux", "scss"],
-    link: ""
-  },
-  {
-    src: "images/sections/portfolio/cellsTaskJs6Vanilla.png",
-    title: "Easy Game",
-    steck: ["React", "redux", "scss"],
-    link: "#"
-  },
-  {
-    src: "images/sections/portfolio/multi-step-form-vanilla-js.png",
-    title: "Bouncy",
-    steck: ["React", "redux", "scss"],
-    link: ""
-  },
-  {
-    src: "images/sections/portfolio/bicycle-github.png",
-    title: "Bouncy",
-    steck: ["React", "redux", "scss"],
-    link: ""
-  }
-];
-
 const Portfolio = ({ portfolio }) => {
   const {
     currentSlide,
@@ -45,7 +12,7 @@ const Portfolio = ({ portfolio }) => {
     prevSlide,
     setSlide,
     sliderLength
-  } = useSlider(slides.length);
+  } = useSlider(portfolio.length);
 
   return (
     <div className="portfolio brick brick-space">
@@ -58,21 +25,21 @@ const Portfolio = ({ portfolio }) => {
             prevSlide,
             setSlide,
             sliderLength,
-            items: slides
+            items: portfolio
           }}
         />
       </div>
       <div className="portfolio__description">
-        <h3 className="title title--small">{slides[currentSlide].title}</h3>
+        <h3 className="title title--small">{portfolio[currentSlide].title}</h3>
         <div>
-          {slides[currentSlide].steck.map((elem, i) => (
+          {portfolio[currentSlide].steck.map((elem, i) => (
             <span className="portfolio__skill" key={i}>
               {elem}
             </span>
           ))}
           <br />
         </div>
-        <a className="portfolio__link" href={slides[currentSlide].link}> Link to gh-pages</a>
+        <a className="portfolio__link" rel="noopener noreferrer" href={portfolio[currentSlide].link} target="_blank"> Link to gh-pages</a>
       </div>
     </div>
   );
