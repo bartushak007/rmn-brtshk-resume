@@ -1,0 +1,62 @@
+.slider {
+  &__container {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: 1s;
+  }
+
+  &__cell {
+    height: 25rem;
+    overflow: hidden;
+    width: calc(100% / 3);
+    padding: 0.5rem;
+    flex-shrink: 0;
+    transition: 0.5s;
+    transform: translateX(0);
+    transform: scale(0.9);
+    position: relative;
+    opacity: 0.3;
+    
+    &:hover {
+      transform: scale(1);
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 0;
+      background: #ff0000;
+      left: 0.5rem;
+      bottom: 0;
+    }
+
+    &--active {
+      transform: scale(1);
+      opacity: 1;
+      
+      &::before {
+        transition: 5s linear;
+        z-index: 1;
+        width: calc(100% - 1rem);
+      }
+
+      .slider__cell-inner {
+        transition: 5s linear;
+        transform: translateY(calc(-100% + 35rem));
+        
+      }
+    }
+  }
+
+  &__cell-inner {
+    transform: translateY(0);
+  }
+}
