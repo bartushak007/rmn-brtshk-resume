@@ -36,6 +36,11 @@
       background: #ff0000;
       left: 0.5rem;
       bottom: 0;
+
+      @keyframes loading {
+        from {width: 0;}
+        to {width: calc(100% - 1rem);}
+      }
     }
 
     &--active {
@@ -43,7 +48,9 @@
       opacity: 1;
       
       &::before {
-        transition: 5s linear;
+        animation-name: loading;
+        animation-duration: 5s;
+        animation-timing-function: linear;
         z-index: 1;
         width: calc(100% - 1rem);
       }

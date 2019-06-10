@@ -13,7 +13,7 @@ const Skills = ({skills: {data, title}, className, wild}) => {
           className={`skills__percent ${color ? 'skills__percent--' + color : ''}`}
           style={{ width: percent }}
         >
-          {percent}
+          {wild && percent}
         </div>
       </div>
     </div>
