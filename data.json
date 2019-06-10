@@ -22,7 +22,7 @@
         },
         {
           "src": "images/sections/portfolio/multi-step-form-vanilla-js.png",
-          "title": "Multy step form",
+          "title": "Multi-step form",
           "steck": ["css", "ES-2015"],
           "link": "https://bartushak007.github.io/multi-step-form-vanilla-js/"
         },
@@ -49,15 +49,15 @@
         }
       ],
       "follow": [
-        { "name": "facebook", "link": "" },
-        { "name": "linkedin", "link": "" },
-        { "name": "instagram", "link": "" },
-        { "name": "github", "link": "" }
+        { "name": "facebook", "link": "https://www.facebook.com/bartushak" },
+        { "name": "linkedin", "link": "https://www.linkedin.com/in/roman-bartushak-5a6039150/" },
+        { "name": "instagram", "link": "https://www.instagram.com/rmnbrtshk/" },
+        { "name": "github", "link": "https://github.com/bartushak007" }
       ],
       "likes": [
         {
           "path": "images/blocks/hobby/powerlifting.png",
-          "hobby": "powerlifting"
+          "hobby": "Powerlifting"
         },
         {
           "path": "images/blocks/hobby/books.png",
@@ -65,7 +65,7 @@
         },
         {
           "path": "images/blocks/hobby/cup.png",
-          "hobby": "Drincing coffe"
+          "hobby": "Drinking coffee"
         },
         {
           "path": "images/blocks/hobby/hiking.png",
@@ -77,7 +77,7 @@
         },
         {
           "path": "images/blocks/hobby/rock.png",
-          "hobby": "Rock"
+          "hobby": "Listening to music"
         }
       ],
       "skills": {
@@ -97,8 +97,8 @@
       "tools": {
         "title": "tools",
         "data": {
-          "photoshop": ["60%"],
-          "illustrator": ["38%"],
+          "Adobe photoshop": ["60%"], 
+          "Adobe xd": ["60%"],          
           "Adobe Illustrator": ["38%"],
           "sublime text": ["78%"],
           "visual studio code": ["50%"]
