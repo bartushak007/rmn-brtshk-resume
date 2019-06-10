@@ -1,8 +1,29 @@
 .portfolio {
   text-align: center;
 
+  &__button-contaioner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  &__button {
+    padding: 0.3rem 1rem;
+    border: transparent;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: 0.1rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
   &__description {
-    margin: 1rem auto;
+    margin: 0 auto;
     max-width: 45rem;
     min-height: 9rem;
     display: flex;

@@ -29,8 +29,26 @@ const Portfolio = ({ portfolio }) => {
           }}
         />
       </div>
+      <div className="portfolio__button-contaioner">
+        <button className="portfolio__button" onClick={nextSlide}>
+          prev
+        </button>
+        <button className="portfolio__button" onClick={prevSlide}>
+          next
+        </button>
+      </div>
       <div className="portfolio__description">
         <h3 className="title title--small">{portfolio[currentSlide].title}</h3>
+        <a
+          className="portfolio__link"
+          rel="noopener noreferrer"
+          href={portfolio[currentSlide].link}
+          target="_blank"
+        >
+          {" "}
+          Link to gh-pages
+        </a>
+
         <div>
           {portfolio[currentSlide].steck.map((elem, i) => (
             <span className="portfolio__skill" key={i}>
@@ -39,7 +57,6 @@ const Portfolio = ({ portfolio }) => {
           ))}
           <br />
         </div>
-        <a className="portfolio__link" rel="noopener noreferrer" href={portfolio[currentSlide].link} target="_blank"> Link to gh-pages</a>
       </div>
     </div>
   );
