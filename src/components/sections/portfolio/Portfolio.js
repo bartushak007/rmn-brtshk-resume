@@ -30,10 +30,10 @@ const Portfolio = ({ portfolio }) => {
         />
       </div>
       <div className="portfolio__button-contaioner">
-        <button className="portfolio__button" onClick={nextSlide}>
+        <button className="portfolio__button" onClick={prevSlide}>
           prev
         </button>
-        <button className="portfolio__button" onClick={prevSlide}>
+        <button className="portfolio__button" onClick={nextSlide}>
           next
         </button>
       </div>
