@@ -9,17 +9,19 @@ import Portfolio from "../../components/sections/portfolio";
 
 import "./style/home.scss";
 
-const Home = ({home: {skills, tools, likes, education, follow, portfolio}}) => {
+const Home = ({
+  home: { skills, tools, likes, education, follow, portfolio }
+}) => {
   return (
     <div className="home container-wide">
       <AuthorInfo />
       <Skills skills={skills} className="mySkills" />
-      <Follow follow={follow}/>
-      <Likes likes={likes}/>
+      <Follow follow={follow} />
+      <Likes likes={likes} />
       <Skills skills={tools} className="tools" wild={true} />
-      <Education education={education}/>
+      <Education education={education} />
       <Resume />
-      <Portfolio portfolio={portfolio}/>
+      <Portfolio portfolio={portfolio} />
     </div>
   );
 };

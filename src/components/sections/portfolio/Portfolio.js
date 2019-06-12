@@ -1,64 +1,20 @@
-import React from "react";
-
-import Slider from "../../blocks/slider";
-import useSlider from "../../../hooks/useSlider";
+import React, {Suspense, lazy} from "react";
 
 import "./style/portfolio.scss";
 
+import useToggle from "../../../hooks/useToggle";
+
+const PortfolioSlider = lazy(() => import("./PortfolioSlider"));
+
 const Portfolio = ({ portfolio }) => {
-  const {
-    currentSlide,
-    nextSlide,
-    prevSlide,
-    setSlide,
-    sliderLength
-  } = useSlider(portfolio.length);
+  const {toggle, turnToggle} = useToggle();
 
   return (
-    <div className="portfolio brick brick-space">
+    <div className="portfolio brick brick-space">  
       <h3 className="title">Portfolio</h3>
-      <div className="slider__container">
-        <Slider
-          {...{
-            currentSlide,
-            nextSlide,
-            prevSlide,
-            setSlide,
-            sliderLength,
-            items: portfolio
-          }}
-        />
-      </div>
-      <div className="portfolio__button-contaioner">
-        <button className="portfolio__button" onClick={prevSlide}>
-          prev
-        </button>
-        <button className="portfolio__button" onClick={nextSlide}>
-          next
-        </button>
-      </div>
-      <div className="portfolio__description">
-        <h3 className="title title--small">{portfolio[currentSlide].title}</h3>
-        <a
-          className="portfolio__link"
-          rel="noopener noreferrer"
-          href={portfolio[currentSlide].link}
-          target="_blank"
-        >
-          {" "}
-          Link to gh-pages
-        </a>
-
-        <div>
-          {portfolio[currentSlide].steck.map((elem, i) => (
-            <span className="portfolio__skill" key={i}>
-              {elem}
-            </span>
-          ))}
-          <br />
-        </div>
-      </div>
-    </div>
+      {!toggle && <button className="portfolio__button portfolio__button--fat" onClick={turnToggle}>Load portfolio</button>}
+      {toggle && <Suspense fallback={<span>loading</span>}><PortfolioSlider portfolio={portfolio}/></Suspense>}
+    </div>    
   );
 };
 

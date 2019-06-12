@@ -17,6 +17,10 @@
     margin: 0.1rem;
     cursor: pointer;
 
+    &--fat {
+      padding: 0.6rem 1rem;
+    }
+
     &:hover {
       opacity: 0.5;
     }
