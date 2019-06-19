@@ -29,8 +29,14 @@
         {
           "src": "images/sections/portfolio/bicycle-github.png",
           "title": "Bicycle",
-          "steck": ["React", "redux", "scss"],
+          "steck": ["bem", "html5", "scss"],
           "link": "https://bartushak007.github.io/bicycle.github.io/build"
+        },
+        {
+          "src": "images/sections/portfolio/repair.jpg",
+          "title": "Repair page",
+          "steck": ["React", "bem", "scss","hooks"],
+          "link": "https://bartushak007.github.io/repair-and-sale-tires/"
         }
       ],
       "education": [
