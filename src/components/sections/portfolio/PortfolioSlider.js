@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Slider from "../../blocks/slider";
 import useSlider from "../../../hooks/useSlider";
@@ -11,10 +11,27 @@ const PortfolioSlider = ({ portfolio }) => {
     setSlide,
     sliderLength
   } = useSlider(portfolio.length);
+  const [touchStart, setTouchStart] = useState(null);
+  const [difference, setDifference] = useState(null);
+
+  useEffect(() => {
+    if (difference && difference > 50) {
+      nextSlide();
+    } else if (difference && difference < -50) {
+      prevSlide();
+    }
+    setDifference(null);
+  }, [difference, nextSlide, prevSlide]);
 
   return (
     <>
-      <div className="slider__container">
+      <div
+        className="slider__container"
+        onTouchStart={e => setTouchStart(e.changedTouches[0].clientX)}
+        onTouchEnd={e =>
+          setDifference(touchStart - e.changedTouches[0].clientX)
+        }
+      >
         <Slider
           {...{
             currentSlide,
