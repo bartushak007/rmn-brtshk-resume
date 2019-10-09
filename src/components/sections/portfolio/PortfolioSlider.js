@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import Slider from "../../blocks/slider";
-import useSlider from "../../../hooks/useSlider";
+import Slider from '../../blocks/slider';
+import useSlider from '../../../hooks/useSlider';
 
 const PortfolioSlider = ({ portfolio }) => {
   const {
@@ -56,13 +56,27 @@ const PortfolioSlider = ({ portfolio }) => {
         <a
           className="portfolio__link"
           rel="noopener noreferrer"
-          href={portfolio[currentSlide].link}
+          href={
+            portfolio[currentSlide].link || portfolio[currentSlide].linkToCSB
+          }
           target="_blank"
         >
-          Link to gh-pages
+          {portfolio[currentSlide].link && 'Link to gh-pages'}
+          {portfolio[currentSlide].linkToCSB && 'Codesandboxe'}
         </a>
+
+        {portfolio[currentSlide].linkToCSBRepo && (
+          <a
+            className="portfolio__link"
+            rel="noopener noreferrer"
+            href={portfolio[currentSlide].linkToCSBRepo}
+            target="_blank"
+          >
+            Codesandbox. repo
+          </a>
+        )}
         <div>
-          {portfolio[currentSlide].steck.map((elem, i) => (
+          {portfolio[currentSlide].stack.map((elem, i) => (
             <span className="portfolio__skill" key={i}>
               {elem}
             </span>
