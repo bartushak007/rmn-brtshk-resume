@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/rmn-brtshk-resume/static/css/main.a0006f5f.chunk.css",
-    "main.js": "/rmn-brtshk-resume/static/js/main.4b1dc2e7.chunk.js",
-    "main.js.map": "/rmn-brtshk-resume/static/js/main.4b1dc2e7.chunk.js.map",
-    "runtime~main.js": "/rmn-brtshk-resume/static/js/runtime~main.2f4060fb.js",
-    "runtime~main.js.map": "/rmn-brtshk-resume/static/js/runtime~main.2f4060fb.js.map",
+    "main.css": "/rmn-brtshk-resume/static/css/main.b6744ed6.chunk.css",
+    "main.js": "/rmn-brtshk-resume/static/js/main.86f9481b.chunk.js",
+    "main.js.map": "/rmn-brtshk-resume/static/js/main.86f9481b.chunk.js.map",
+    "runtime~main.js": "/rmn-brtshk-resume/static/js/runtime~main.66b0f1c1.js",
+    "runtime~main.js.map": "/rmn-brtshk-resume/static/js/runtime~main.66b0f1c1.js.map",
     "static/js/2.6c274de4.chunk.js": "/rmn-brtshk-resume/static/js/2.6c274de4.chunk.js",
     "static/js/2.6c274de4.chunk.js.map": "/rmn-brtshk-resume/static/js/2.6c274de4.chunk.js.map",
-    "static/css/3.c6b345ce.chunk.css": "/rmn-brtshk-resume/static/css/3.c6b345ce.chunk.css",
-    "static/js/3.380e6c1d.chunk.js": "/rmn-brtshk-resume/static/js/3.380e6c1d.chunk.js",
-    "static/js/3.380e6c1d.chunk.js.map": "/rmn-brtshk-resume/static/js/3.380e6c1d.chunk.js.map",
+    "static/css/3.869881bd.chunk.css": "/rmn-brtshk-resume/static/css/3.869881bd.chunk.css",
+    "static/js/3.58d24c7a.chunk.js": "/rmn-brtshk-resume/static/js/3.58d24c7a.chunk.js",
+    "static/js/3.58d24c7a.chunk.js.map": "/rmn-brtshk-resume/static/js/3.58d24c7a.chunk.js.map",
     "index.html": "/rmn-brtshk-resume/index.html",
-    "precache-manifest.2cfcfa81b31ab48215621d570c90d8a8.js": "/rmn-brtshk-resume/precache-manifest.2cfcfa81b31ab48215621d570c90d8a8.js",
+    "precache-manifest.81dd694af416a8c32f10744d7d94bd77.js": "/rmn-brtshk-resume/precache-manifest.81dd694af416a8c32f10744d7d94bd77.js",
     "service-worker.js": "/rmn-brtshk-resume/service-worker.js",
-    "static/css/3.c6b345ce.chunk.css.map": "/rmn-brtshk-resume/static/css/3.c6b345ce.chunk.css.map",
-    "static/css/main.a0006f5f.chunk.css.map": "/rmn-brtshk-resume/static/css/main.a0006f5f.chunk.css.map",
+    "static/css/3.869881bd.chunk.css.map": "/rmn-brtshk-resume/static/css/3.869881bd.chunk.css.map",
+    "static/css/main.b6744ed6.chunk.css.map": "/rmn-brtshk-resume/static/css/main.b6744ed6.chunk.css.map",
     "static/media/authorInfo.scss": "/rmn-brtshk-resume/static/media/back.71e46878.jpg"
   }
 }

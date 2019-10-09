@@ -3,39 +3,47 @@
     "home": {
       "portfolio": [
         {
-          "src": "images/sections/portfolio/photo-gallery.png",
-          "title": "Photo gallery",
-          "steck": ["React", "redux", "bem", "scss"],
-          "link": "https://bartushak007.github.io/photo-gallery/"
-        },
-        {
           "src": "images/sections/portfolio/bouncy.png",
           "title": "Bouncy",
-          "steck": ["SCSS", "HTML5", "BEM", "GULP", "SVG"],
+          "stack": ["SCSS", "HTML5", "BEM", "GULP", "SVG"],
           "link": "https://bartushak007.github.io/bouncy/build"
+        },
+        {
+          "src": "images/sections/portfolio/snake.png",
+          "title": "Snake game",
+          "stack": ["SCSS", "React"],
+          "linkToCSB": "https://v5rjx.csb.app/",
+          "linkToCSBRepo": "https://codesandbox.io/s/snakegame2-v5rjx"
         },
         {
           "src": "images/sections/portfolio/cellsTaskJs6Vanilla.png",
           "title": "Easy Game",
-          "steck": ["HTML5", "GULP", "ES-2015", "WEBPACK", "bem", "scss"],
+          "stack": ["HTML5", "GULP", "ES-2015", "WEBPACK", "bem", "scss"],
           "link": "https://bartushak007.github.io/cellsTaskJs6/dist/index.html"
         },
+
         {
           "src": "images/sections/portfolio/multi-step-form-vanilla-js.png",
           "title": "Multi-step form",
-          "steck": ["css", "ES-2015"],
+          "stack": ["css", "ES-2015"],
           "link": "https://bartushak007.github.io/multi-step-form-vanilla-js/"
         },
         {
           "src": "images/sections/portfolio/bicycle-github.png",
           "title": "Bicycle",
-          "steck": ["bem", "html5", "scss"],
+          "stack": ["bem", "html5", "scss"],
           "link": "https://bartushak007.github.io/bicycle.github.io/build"
+        },
+        {
+          "src": "images/sections/portfolio/photo-gallery.png",
+          "title": "Photo gallery",
+          "stack": ["React", "redux", "bem", "scss"],
+          "link": "https://bartushak007.github.io/photo-gallery/"
         },
         {
           "src": "images/sections/portfolio/repair.jpg",
           "title": "Repair page",
-          "steck": ["React", "bem", "scss","hooks"],
+          "stack": ["React", "bem", "scss", "hooks"],
           "link": "https://zmigei-foad.co.il/"
         }
       ],
@@ -56,7 +64,10 @@
       ],
       "follow": [
         { "name": "facebook", "link": "https://www.facebook.com/bartushak" },
-        { "name": "linkedin", "link": "https://www.linkedin.com/in/roman-bartushak-5a6039150/" },
+        {
+          "name": "linkedin",
+          "link": "https://www.linkedin.com/in/roman-bartushak-5a6039150/"
+        },
         { "name": "instagram", "link": "https://www.instagram.com/rmnbrtshk/" },
         { "name": "github", "link": "https://github.com/bartushak007" }
       ],
@@ -103,8 +114,8 @@
       "tools": {
         "title": "tools",
         "data": {
-          "Adobe photoshop": ["60%"], 
-          "Adobe xd": ["60%"],          
+          "Adobe photoshop": ["60%"],
+          "Adobe xd": ["60%"],
           "Adobe Illustrator": ["38%"],
           "sublime text": ["78%"],
           "visual studio code": ["50%"]
